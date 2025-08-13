@@ -4,4 +4,3 @@
 2. De igual manera, **evitar** darle estilos o funciones desde el archivo HTML (por ejemplo, utilizar el atributo style="")
 3. Intentar estructurar una página de manera **semántica** (header, nav, section, footer)
 4. Mantener un orden de identación
-5. 
