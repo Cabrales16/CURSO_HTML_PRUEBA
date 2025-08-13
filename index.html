@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera página web</title>
+    <link rel="shortcut icon" href="./src/whatsapp.ico" type="image/x-icon"> <!-- La etiqueta link permite enlazar un archivo externo, en este caso un ícono que se mostrará en la pestaña del navegador -->
+</head>
+<body>
+    <h1>¡Hola mundo!</h1>
+    <h2>¡Hola mundo!</h2>
+    <h3>¡Hola mundo!</h3>
+    <h4>¡Hola mundo!</h4>
+    <h5>¡Hola mundo!</h5>
+    <h6>¡Hola mundo!</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet perspiciatis aliquam quae accusamus eveniet magni explicabo! Animi, similique sint!</p>
+    <br>
+    <b>Negrita</b>
+    <br>
+    <i>Cursiva</i>
+    <br>
+    <u>Subrayado</u>
+    <br>
+    <strike>Tachado</strike>
+    <br>
+    <small>Chiquita</small>
+    <br>
+    <h2>Ingrese a la página 2</h2>
+    <a href="src/pagina2.html">Click aquí</a>
+    <br>
+    <h2>Dirijase a Facebook:</h2>
+    <a href="https://facebook.com" target="_blank">Facebook</a> <!-- La etiqueta target="_blank" permite dirigirse a otra página mediante una nueva ventana sin necesidad de abandonar la página actual-->
+    <br>
+    <h2>Tipos de listas</h2>
+    <h3>Lista desordenada (o de puntos)</h3>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <h3>Lista ordenada (o numerada)</h3>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+    <br>
+
+    <h1>Multimedia</h1>
+    <h2>Imagen</h2>
+    <img src="https://picsum.photos/200/300" alt="Imagen aleatoria" width="200" height="300">
+
+    <h2>Video</h2>
+    <video width="320" height="240" controls> <!-- El atributo controls permite que el usuario pueda reproducir, pausar, etc. el video -->
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> <!-- El atributo type indica el tipo de archivo del video -->
+        Tu navegador no soporta el elemento de video. <!-- Mensaje que se muestra si el navegador no soporta el video -->
+    </video>
+
+    <h2>Audio</h2>
+    <audio controls> <!-- El atributo controls permite que el usuario pueda reproducir, pausar, etc. el audio -->
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg"> <!-- El atributo type indica el tipo de archivo del audio -->
+        Tu navegador no soporta el elemento de audio. <!-- Mensaje que se muestra si el navegador no soporta el audio -->
+    </audio>
+    <br><br>
+
+    <div> <!-- Un divisor es un elemento que permite agrupar otros elementos y aplicar estilos a ellos -->
+        <b>Esto es esta dentro de un divisor</b>
+    </div>
+
+    <h1>Formulario</h1>
+    <form action="">
+        <input type="text" name="nombre" required value="Andres"> <!-- El atributo type="text" indica que este campo es para ingresar texto y el atributo required indica que este campo es obligatorio -->
+        <!--El atributo value sirve para indicar un dato por defecto-->
+        <br>
+        <input type="text" name="apellido" required> <!-- El atributo type="text" indica que este campo es para ingresar texto y el atributo required indica que este campo es obligatorio -->
+        <br>
+        <input type="email" name="correo" required> <!-- El atributo type="email" indica que este campo es para ingresar un correo electrónico y el atributo required indica que este campo es obligatorio -->
+        <br>
+        <input type="password" name="contraseña" required> <!-- El atributo required indica que este campo es obligatorio -->
+        <br>
+        <input type="submit" value="Enviar"> <!-- El atributo type="submit" indica que este botón enviará el formulario -->
+        <br>
+        <input type="reset" value="Limpiar"> <!-- El atributo type="reset" indica que este botón limpiará los campos del formulario -->
+        <br>
+        <input type="checkbox" name="terminos" id="terminos">
+        <br>
+        <label for="terminos">Acepto los términos y condiciones</label> <!-- El
+    atributo for indica que este label está asociado al checkbox con el id "terminos" -->
+        <br>
+        <input type="radio" name="genero" value="masculino" id="masculino"> <!-- El atributo name indica que estos radio buttons pertenecen al mismo grupo, permitiendo seleccionar solo uno -->
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" name="genero" value="femenino" id="femenino"> <!-- El atributo value indica el valor que se enviará al servidor si este radio button es seleccionado -->
+        <label for="femenino">Femenino</label>
+        <br>
+        <select name="pais" id="pais"> <!-- La etiqueta select permite crear un menú desplegable -->
+            <option value="argentina">Argentina</option> <!-- La etiqueta option permite crear una opción dentro del menú desplegable -->
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+        </select>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribe tus comentarios aquí..."></textarea> <!-- La etiqueta textarea permite crear un área de texto para ingresar comentarios -->
+        <br>
+        <textarea name="" id="unaid" readonly></textarea> <!-- El atributo readonly indica que este campo no se puede editar -->
+    </form>
+    <br>
+    <h1>Tabla</h1>
+    <table border="1"> <!-- El atributo border indica que la tabla tendrá un borde -->
+        <tr> <!-- La etiqueta tr indica una fila de la tabla -->
+            <th>Nombre</th> <!-- La etiqueta th indica una celda de encabezado -->
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Andrés</td> <!-- La etiqueta td indica una celda de datos -->
+            <td>Gómez</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>Pérez</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>García</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <br>
+    <center> <!-- La etiqueta center permite centrar el contenido dentro de ella, pero no es recomendada de utilizar en la actualidad -->
+        <h1>¡Gracias por visitar mi primera página web!</h1>
+        <p>Espero que te haya gustado.</p>
+    </center>
+
+    <h1>Noticias</h1>
+    <a href="#noticia2">Click aqui para saltar a la noticia 2</a>
+    <h2>Noticia 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto hic, officia consequatur, id dolorum, similique eaque quod voluptatem ab dignissimos quae veniam voluptate totam! Id eius labore aperiam dolores iste quod omnis? Veritatis inventore est architecto dolore similique quidem. Laboriosam facere expedita voluptas inventore nobis soluta necessitatibus optio eligendi maiores natus et dolorem magni sint illum numquam similique tempora perspiciatis nulla animi molestiae, labore excepturi? Ducimus atque velit, animi consectetur odit facilis harum eveniet provident inventore reiciendis, vitae iure ab. Debitis laborum delectus hic recusandae illum eaque voluptas odio, exercitationem officia? Iusto esse accusantium unde excepturi reprehenderit iure eum deleniti, soluta tempora, sunt magnam voluptates veritatis officia reiciendis debitis magni molestias autem! Quia veniam ad unde doloremque optio illum laboriosam illo vitae incidunt similique nam voluptate deleniti laborum culpa assumenda nostrum iste beatae corrupti velit enim at earum, adipisci tenetur! Doloremque culpa, saepe itaque qui cum explicabo quo. Quo culpa quidem at cupiditate, aut inventore iste laborum! Ea excepturi necessitatibus dicta at iure illo rerum officia qui enim eius sunt accusantium, veniam quia dolores cupiditate! Quo quae minus sequi, quas recusandae doloremque error natus obcaecati impedit, officiis ad itaque neque. Distinctio minus placeat sit, hic quas aspernatur natus adipisci.</p>
+    <h2 id="noticia2">Noticia 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos obcaecati omnis libero dolor reprehenderit hic minus sit labore ducimus!</p>
+    <br>
+</body>
+</html>
